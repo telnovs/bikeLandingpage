@@ -52,7 +52,7 @@ module.exports = {
          loader: 'pug-loader',
          options: {
             pretty: true,
-         }
+         },
          //oneOf: [
          //   // this applies to <template lang="pug"> in Vue components
          //   {

@@ -1,10 +1,10 @@
-include ../utils/mixins
+
 block variables
         //- include ../includes/modules/header
         //- include ../includes/modules/footer
 
 doctype html
-html(lang='en')
+html(lang='ru')
   head
     meta(charset='utf-8')
     meta(http-equiv='Content-type' content='text/html; charset=UTF-8')
@@ -13,18 +13,20 @@ html(lang='en')
     meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
     title #{title}
     meta(name="description", content=description)
-    block head
+    //-block head
 
   body
     .wrapper
-        main.page
-          //- include ../includes/modules/header
-          .main-screen
-            .main-screen__bg(class=['ibg'])
-              <img src="./assets/img/bg_main.jpg" alt="">
-          block content
+      main.page
+        include ../includes/modules/header
+        .main-screen
+          .main-screen__bg(class=['ibg'])
+            img(src="../assets/img/bg_main.jpg", alt="")
+        //-include ../includes/modules/header
+        //-block conten
       
       
       
         //- include ../includes/modules/foote
-    block script
+  //-block script
+  include ../utils/mixins
