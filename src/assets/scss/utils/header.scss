@@ -3,21 +3,33 @@
    position: absolute;
    width: 100%;
    z-index: 50;
-
+   left: 0px;
+   top: 35px;
    &__row {
       @include flexbox();
       justify-content: center; //центровка по вертикали
       align-items: center; //центровка по Горизонтали
+      height: 85px;
    }
 
    &__menu {
    }
 
    &__logo {
+      // выравнимаем логотип по центру
+      position: absolute;
+      left: 50%;
+      top: 0;
+      @include tr(-50%, 0px, 0px);
    }
 }
 .menu {
    &_link {
+      color: #4d4959;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2.6px;
    }
 
    &__icon {
@@ -27,6 +39,35 @@
    }
 
    &__list {
+      @include flexbox();
+      li {
+         position: relative;
+         padding: 0px 37.5px;
+         &:nth-child(2) {
+            padding: 0px 110px 0px 37.5px;
+         }
+         &:nth-child(3) {
+            padding: 0px 37.5px 0px 110px;
+         }
+         &::after {
+            // точка
+            content: "";
+            width: 2px;
+            height: 2px;
+            background-color: #4d4959;
+            border-radius: 50%;
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            margin: -1px 0px 0px 0px;
+         }
+         &:nth-child(2),
+         &:last-child {
+            &::after {
+               display: none;
+            }
+         }
+      }
    }
 }
 .icon-menu {
