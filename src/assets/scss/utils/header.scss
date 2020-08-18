@@ -11,10 +11,8 @@
       align-items: center; //центровка по Горизонтали
       height: 85px;
    }
-
    &__menu {
    }
-
    &__logo {
       // выравнимаем логотип по центру
       position: absolute;
@@ -35,13 +33,10 @@
       text-transform: uppercase;
       letter-spacing: 2.6px;
    }
-
    &__icon {
    }
-
    &__body {
    }
-
    &__list {
       @include flexbox();
       li {
@@ -80,7 +75,7 @@
          height: 100%;
          top: 0px;
          left: 0px;
-         background-color: #4d4d4d;
+         //background-color: #4d4d4d;
          padding: 150px 0px 20px 0px;
          overflow: auto;
          @include tr(0px, -100%, 0px); // скрываем меню
@@ -88,6 +83,7 @@
          &.active {
             // при активе показываем меню
             @include tr(0px, 0px, 0px);
+            background-color: #4d4d4d;
          }
       }
       &__list {
