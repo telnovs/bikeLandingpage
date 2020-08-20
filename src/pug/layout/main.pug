@@ -62,7 +62,7 @@ html(lang='ru')
                      .block__text(class="block__text_j") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   .brands__image(class="ibg")      
                      img(src="../assets/img/brands/03.jpg", alt="")  
-          section.brands(class="brands_last")
+          section.brands(class="brands_last")         
             .brands__row
                .brands__column
                   a(class="brands__item item" href="")
@@ -83,7 +83,108 @@ html(lang='ru')
                      span.item__logo
                         img(src="../assets/img/logos/03.png", alt="")
                      span.item__image(class="ibg")
-                        img(src="../assets/img/brands/07.jpg", alt="")      
-        //- include ../includes/modules/foote
+                        img(src="../assets/img/brands/07.jpg", alt="")  
+          section.slider
+            .container
+               .slider__body
+                  .slider__item
+                     .slider__icon
+                        img(src="../assets/img/icons/twitter.png", alt="alt")
+                     .slider__tittle AOD New York @aod
+                        span 35 min
+                     .slider__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, officia. Totam ipsa neque quas maxime dolores, id aliquam officiis officia illum facilis, maiores voluptatum similique animi quia iusto odio. Aut.
+                  .slider__item
+                     .slider__icon
+                        img(src="../assets/img/icons/twitter.png", alt="alt")
+                     .slider__tittle AOD New York @aod
+                        span 35 min
+                     .slider__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam necessitatibus, repellat repudiandae nulla iste eaque qui dolorem. Aspernatur, magnam quas!
+                  .slider__item
+                     .slider__icon
+                        img(src="../assets/img/icons/twitter.png", alt="alt")
+                     .slider__tittle AOD New York @aod
+                        span 35 min
+                     .slider__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptates officiis, distinctio minima nostrum similique voluptas esse, dolore quo suscipit, molestias sit nobis rerum earum? Maiores quibusdam ipsum placeat fuga, cumque asperiores architecto numquam reiciendis maxime, ipsam sint, animi necessitatibus. 
+          section.shop
+            .shop__body
+               .shop__column(class="shop__column_b")
+                  .shop__block(class="block-shop")
+                     .block-shop__row
+                        .block-shop__column
+                           a.block-shop__item(class="block-shop__item_l" class=['item'] href='')
+                              span.item__logo
+                                 img(src='../assets/img/icons/bike.png' alt='')
+                                 span Shop now
+                              span.item__image(class="ibg")
+                                 img(src='../assets/img/shop/01.jpg' alt='')
+                        .block-shop__column
+                           a.block-shop__item(class='block-shop__item_l' class=['item'] href='')
+                              span.item__logo
+                                 img(src='../assets/img/icons/bike.png' alt='')
+                                 span Shop now
+                              span.item__image(class="ibg")
+                                 img(src='../assets/img/shop/02.jpg' alt='')
+                     a.block-shop__item(class="item" href='')
+                        span.item__logo
+                           img(src='../assets/img/icons/bike.png' alt='')
+                        span Shop now
+                        span.item__image(class="ibg")
+                           img(src='../assets/img/shop/03.jpg' alt='')
+               .shop__column
+                  a.block-shop__item(class="block-shop__item_b" class=['item'] href='')
+                     span.item__logo
+                        img(src='../assets/img/icons/bike.png' alt='')
+                        span Shop now
+                     span.item__image(class="ibg")
+                        img(src='../assets/img/shop/04.jpg' alt='')
+               .shop__column
+                  a.block-shop__item(class="block-shop__item_b" class=['item'] href='')
+                     span.item__logo
+                        img(src='../assets/img/icons/bike.png' alt='')
+                        span Shop now
+                     span.item__image(class="ibg")
+                        img(src='../assets/img/shop/06.jpg' alt='')
+               .shop__column(class="shop__column_b")
+                  .shop__block(class='block-shop')
+                     a.block-shop__item(class="item" href='')
+                        span.item__logo
+                           img(src='../assets/img/icons/bike.png' alt='')
+                        span Shop now
+                        span.item__image(class="ibg")
+                           img(src='../assets/img/shop/07.jpg' alt='')
+                     .block-shop__row
+                        .block-shop__column
+                           a.block-shop__item(class="block-shop__item_l" class=['item'] href='')
+                              span.item__logo
+                                 img(src='../assets/img/icons/bike.png' alt='')
+                                 span Shop now
+                              span.item__image(class="ibg")
+                                 img(src='../assets/img/shop/08.jpg' alt='')
+                        .block-shop__column
+                           a.block-shop__item(class="block-shop__item_l" class=['item'] href='')
+                              span.item__logo
+                                 img(src='../assets/img/icons/bike.png' alt='')
+                                 span Shop now
+                              span.item__image(class="ibg")
+                                 img(src='../assets/img/shop/09.jpg' alt='')
+            .shop__footer
+               .container
+                  a.shop__btn(href='') DISCOVER THE SHOP
+          section.subscribe
+            .container
+               .subscribe__body
+                  .subscribe__logo
+                     img(src='../assets/img/logo.png' alt='')
+               .subscribe__label Stay on the saddle!
+               form.subscribe__form(action='#')
+                  .subscribe__input
+                     input.input.req.email(autocomplete='off' type='text' name='form[]' data-value='enter your email...')
+                  .subscribe__button
+                     button.subscribe__btn(type='submit') GO
+        include ../includes/modules/footer
   //-block script
   include ../utils/mixins
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
